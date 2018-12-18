@@ -54,29 +54,71 @@ table {
   ========================================
 */
 
+/* Common Elements */
+
 body {
   margin: 0 auto;
   width: 100%;
   color: #888;
   font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h1 {
-  
-}
-.heading {
-  font-size: 60px;
-  line-height: 44px;
-  color: white;
-}
+
 h2 {
   font-size: 22px;
   margin:0 0 20px 0;
 }
+
+h3 {
+  color: darkcyan;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 35px;
+  color: darkcyan;
+  margin-top: 40px;
+}
+
+h5 {
+  font-size: 18px;
+  color: grey;
+}
+
+h6 {
+  font-size: 25px;
+  margin: 0 230px 0 230px;
+  color: grey;
+  font-weight: 100;
+}
+
+h4, h6 {
+  margin: 0 auto;
+  line-height: 38px;
+  text-align: center;
+}
+
+
 a {
   text-decoration: none;
   font-size: 18px;
   color: white;
 }
+
+p {
+  position: relative;
+  left: 55px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 280px;
+  margin: 30px 40px 50px 0px;
+  color: darkslategrey;
+}
+
+
 .float-left {
   border-top: 4px solid white;
   padding: 40px 0 22px 0;
@@ -84,41 +126,40 @@ a {
   font-weight: 100;
   margin-left: 200px;
 }
+
 .clear-float {
   clear: both;
 }
+
 .right-top {
   position: relative;
   left: 300px;
   top: 55px;
 }
-h6, h4 {
-  margin: 0 auto;
-  line-height: 38px;
-  text-align: center;
+
+
+/* Header Formatting */
+
+.heading {
+  font-size: 50px;
+  line-height: 44px;
+  color: white;
+  text-transform: uppercase;
 }
-h4 {
-  font-size: 35px;
-  color: darkcyan;
-  margin-top: 40px;
+
+.bluebackground {
+  background-color: darkslategrey;
+  width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
-h6 {
-  font-size: 25px;
-  margin: 0 230px 0 230px;
-  color: grey;
-  font-weight: 100;
-}
-h3 {
-  color: darkcyan;
-}
-p {
-  position: relative;
-  left: 55px;
-  font-size: 22px;
-  margin-bottom: 25px;
-  color: 
-}
-.box {
+
+
+/* Main section formatting */
+
+
+.box {          /* Button replacement */
   width: 150px;
   padding: 20px;
   border-radius: 5px;
@@ -127,80 +168,267 @@ p {
   text-transform: uppercase;
   margin: 30px auto;
 }
-.inline-block {
-  display: inline-block;
-  width: 280px;
-  margin: 30px 40px 50px 0px;
-  color: darkslategrey;
-}
+
 .elements {
   display: inline-block;
 }
-h5 {
-  font-size: 18px;
-  color: grey;
-}
+
+
 .footer-left {
   float: left;
   margin:35px 0 25px 220px;
 }
+
 .right-bottom {
   margin-left: 690px;
   padding: 37px;
 }
-.bluebackground {
-  background-color: darkslategrey;
-  width: 100%;
-  vertical-align: top;
-  overflow: hidden;
-  padding-bottom: 30px;
-}
+
+
 .marginal-class {
   margin: 0 0 20px 0;
 }
+
 .subheading-color {
   color: darkslategrey;
   line-height: 30px;
 }
+
 .left-margin {
   margin-left: 200px;
+  display: inline-block;
 }
+
 .bottom-left {
   color: white;
   font-size: 15px;
 }
+
 .offset-left {
   margin-left: 100px;
 }
+
 .bluebackgroundbottom {
   background-color: darkslategrey;
   width: 100%;
   overflow: hidden;
   display: inline-block;
 }
+
 .speaker-section-background {
   background:  linear-gradient(to right, #a1d3b0, #f6f1d3);
   overflow: hidden;
 }
+
 .speaker-margins {
   margin: 40px;
 }
+
 .blue-background-bottom-speaker {
   background-color: darkslategrey;
   width: 100%;
   overflow: hidden;
   display: inline-block;
-  padding-bottom: 200px;
+  /*padding-bottom: 200px;*/
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.author-section {
+  width: 700px;
+  padding-top: 60px;
+  color: darkcyan;
+}
+.definition {
+  font-size: 15px;
+  padding-top: 0px;
+  color: grey;
+  font-weight: 400;
+}
+.paragraphs {
+  width: 1000px;
+  margin-left: 220px;
+  text-align: left;
+  position: relative;
+}
+.paragraphs-container {
+  width: 500px;
 }
 
-
-
-
-
-
-
-
-
+.description {
+  position: none;
+  font-size: 18px;
+  margin: 30px 0 30px -55px;
+  display: inline-block;
+  position: relative;
+}
+.discussingdesign {
+  color: darkcyan;
+  /*display: inline-block;*/
+}
+.contact-info {
+  width: 200px;
+  height: 50px;
+  border: .5px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 600px;
+  top: 155px;
+  padding-top: 50px;
+}
+.adam {
+  left: 600px;
+  top: 860px;
+}
+.ajself {
+  left: 600px;
+  top: 1625px;
+}
+.arman {
+  top: 2086px;
+}
+.margin {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+  background: contain;
+  border-radius: 15px;
+}
+.authors-image {
+  border-radius: 70%;
+  vertical-align: top;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+.mid-section {
+  margin: 40px 0 20px 200px;
+  display: inline-block;
+}
+.mid-leftmargin {
+  margin-left: -55px; 
+  color: darkcyan;
+  padding-top: 30px;
+}
+.relative {
+  position: relative;
+  padding-bottom: 100px;
+}
+.chicago-location {
+  position: absolute;
+  left: 500px;
+  bottom: 120px;
+  width: 500px;
+  height: 200px;
+}
+.hotel-chicago {
+  position: absolute;
+  left: 500px;
+  bottom: -130px;
+  width: 500px;
+  height: 200px;
+}
+.section-width {
+  width: 500px;
+}
+ul, li {
+  list-style-type: square;
+  margin-left: 10px;
+}
+label {
+  font-size: 20px;
+  color: darkcyan;
+  font-weight: 300;
+}
+textarea {
+  width: 220px;
+  height: 50px;
+}
+.colu-width {
+  width: 200px;
+  position: absolute;
+  left: 620px;
+  bottom: -150px;
+}
+.register-group {
+  width: 250px;
+}
+.register-group input {
+  margin: 5px 0 10px 0;
+  width: 250px;
+  height: 30px;
+}
+.relative1 {
+  position: relative;
+}
+.button {
+  border: 1px;
+  background: darkcyan;
+  padding: 11px 30px 11px 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+option {
+  background: darkcyan;
+  color: black;
+}
+table {
+  margin: 30px 0 20px 0;
+}
+tr {
+  color: darkcyan;
+  font-size: 20px;
+  margin-left: 20px;
+}
+thead, th {
+  color: darkcyan;
+  padding: 20px;
+}
+thead {
+}
+.schedule-offset {
+  padding-left: 30px;
+  color: grey;
+  font-size: 15px;
+}
+tbody th {
+  font-size: 15px;
+  color: grey;
+  text-align: right;
+}
+td {
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 100%;
+  padding: 15px;
+}
+.register-section {
+  margin-left: 0;
+}
+.table-section {
+  width: 300px;
+  color: darkcyan;
+  font-size: 20px;
+}
+.schedule-elements {
+  color: grey;
+  font-size: 16px;
+  width: 400px;
+  display: inline-block;
+}
 
 
 
